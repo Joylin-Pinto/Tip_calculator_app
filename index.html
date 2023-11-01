@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<title> Tip calculator app</title>
+</head>
+<body>
+  <img src="./images/logo.svg" id="logo">
+  <main>
+    <div class="left">
+      <section id="bill-sec">
+        <p>Bill</p>
+        <input type="number" name="bill" id="bill-input" class="bill-input" placeholder="0">
+        <i class="fa fa-dollar"  ></i>     
+       </section>
+      <section id="tip-sec">
+        <p style="margin-bottom: 10px;">Select Tip %</p>
+        <div class="btns">
+        <button id="5per" >5%</button>
+        <button id="10per" >10%</button>
+        <button id="15per" >15%</button>
+        <button id="25per" >25%</button>
+        <button id="50per" >50%</button>
+        <input type ="Number" id="custom" placeholder="Custom"> 
+      </div>
+      </section>
+      <section id="people-sec">
+        <span>Number of People</span>
+        <span id="error"  >can't be zero</span>
+        <input type="number" name="bill" id ="people"class="bill-input" placeholder="0">
+        <i class="fa fa-user"  ></i>     
+      </section>
+    </div>
+    <div class="right">
+      <div class="amount-details">
+      <div class="col-1">
+      <div class="text-left">
+        <p class="main-text">Tip Amount</p>
+        <p class="sub-text">/ person</p>
+      </div>
+      <p id="tip-amt" class="totalAmt" >$0.00</p>
+    </div>
+      <div class="col-1">
+      <div class="text-left">
+        <p class="main-text">Total</p>
+        <p class="sub-text">/ person</p>
+      </div>
+      <p id="per-person" class="totalAmt">$0.00</p>
+    </div>
+    </div>
+    <button id="reset" >Reset</button>
+  </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
